@@ -1,4 +1,10 @@
-* {
+/* =========================
+   RESET
+   ========================= */
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -8,5 +14,64 @@ html {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  padding: 0;
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================
+   BUTTONS & FORMS
+   ========================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: #f5f1e8;
+  color: #111;
 }
