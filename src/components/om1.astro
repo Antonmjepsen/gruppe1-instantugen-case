@@ -1,0 +1,40 @@
+---
+import Button from "./button.astro";
+---
+<section>
+<div class="tekst"><h2>Hvad er instant ugen?</h2>
+<p>Kort fortalt er Instant Ugen en hyldest til instant-fotografering; En opfordring til at udforske instant-fotografiets glæder. Instant Ugen foregår to gange årligt: I påsken og efteråret. Så find dit Polaroid-, Instax- eller hvilket som helst andet instant-kamera, frem, og vis os dine instants. Instant Ugen er ikke rigtig en fotokonkurrence, det er mere en hyldest til god gammeldags analog instant-fotografering - alle, der deltager, er vindere.<br>
+Men: Vi har en flot præmie til én heldig instant-fotograf!</p>
+  <Button text="Læs mere"/>
+</div>
+
+<div class="img">
+      <img src="/img2/sivstrand.webp" alt="Instant foto af siv">
+</div>
+</section>
+
+<style>
+p {max-width: 60ch;} /* Sørger for der er 60 tegn pr linje = UX design */
+
+section {text-align: center;
+padding: 50px;}
+
+ p, h2 {
+    text-align: left;
+    padding-left: 30%;
+  }
+
+  img {padding-left: 12%;}
+
+  .div.tekst {align-items: center;}
+
+
+/* desktop */
+  @media (min-width: 1024px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+      img {padding-left: 0%;}
+  }
+</style>
