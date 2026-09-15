@@ -1,0 +1,100 @@
+---
+import Button from "./button.astro";
+---
+
+<section>
+  <div class="tekst">
+    <div class="tekst-venstre">
+      <h1>Instant</h1>
+      <h3>uge 14.</h3>
+    </div>
+
+    <div class="kamera">
+    <img src="/img2/kamera.webp" alt="Instant kamera med polaroidfoto" />
+    </div>
+
+    <div class="tekst-hojre">
+      <h1>Ugen</h1>
+      <h3>30.3-6.4</h3>
+    </div>
+  </div>
+
+    <Button text="Deltag"/>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .kamera img {
+margin-top: -5%;
+min-width: 200%;
+transform: translateX(-70px);
+  }
+
+  .tekst {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    width: min(100%, 1100px);
+  }
+
+  .tekst-venstre {
+    text-align: right;
+        margin-top: 151%;
+  }
+
+  .tekst-hojre {
+    text-align: left;
+     margin-top: 200%;
+  }
+
+ 
+
+
+ 
+  
+
+
+@media (min-width: 1024px) {
+  .tekst {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: min(100%, 1100px);
+    margin: 0 auto;
+  }
+
+  .kamera {
+    justify-self: center;
+  }
+
+  .kamera img {
+    width: 700px;
+    min-width: 0;
+    margin-top: -5%;
+   margin-left: 40px;
+  }
+
+  .tekst-venstre {
+    justify-self: end;
+    text-align: right;
+    margin-top: 0;
+    padding-right: 40px;
+  }
+
+  .tekst-hojre {
+    justify-self: start;
+    text-align: left;
+    margin-top: 0;
+    padding-left: 40px;
+  }
+
+  h1 {
+    font-size: 96px;
+  }
+}
+</style>
