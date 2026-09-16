@@ -1,0 +1,168 @@
+<section class="deltag">
+
+  <div class="deltag-trin">
+    
+    <div class="trin">
+      <div class="trin-billede">
+        <img src="/deltagimg/deltagerbillede1.svg" alt="billede1">
+      </div>
+    </div>
+
+    <div class="trin">
+      <div class="trin-billede">
+        <img src="/deltagimg/deltagerbillede2.svg" alt="billede2">
+      </div>
+    </div>
+
+    <div class="trin">
+      <div class="trin-billede">
+        <img src="/deltagimg/deltagerbillede3.svg" alt="billede3">
+      </div>
+    </div>
+
+    <div class="trin">
+      <div class="trin-billede">
+        <img src="/deltagimg/deltagerbillede4.svg" alt="billede4">
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="deltag-info">
+
+    <h2>Sådan deltager du:</h2>
+
+    <p>
+      Har du et instant foto klar til deling?<br>
+      For at deltage i Instant Ugen:
+    </p>
+
+    <ol>
+      <li>
+        Tag et billede af dit instant foto med din smartphone
+        (eller scan det for den bedste kvalitet).
+      </li>
+
+      <li>
+        Upload dit billede og dit navn + kontaktinfo.
+      </li>
+
+      <li>
+        Accepter vilkår og betingelser for konkurrencen.
+      </li>
+
+      <li>
+        Du kan indsende op til 5 bidrag.
+      </li>
+    </ol>
+
+  </div>
+
+
+  <div class="deltag-del">
+    <p>Klar til at dele dit instant foto? Del dem her!</p>
+    <button>Del her</button>
+  </div>
+
+
+  <div class="deltag-polaroids">
+   <img src="/deltagimg/nedersteimgdeltag.webp" alt="polaroiddeltager">
+  </div>
+
+</section>
+
+<style>
+  
+
+  .deltag {
+width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: helvetica;
+}
+.deltag-trin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trin-billede img {
+  width: 100%;
+  display: block;
+}
+
+.deltag-polaroids img{
+    width: 100%;
+    text-align: center;
+}
+
+.deltag-del {
+  text-align: center;
+}
+
+.deltag-info {
+  padding: 0 20px;
+}
+
+.deltag-info h2 {
+  margin: 0 0 20px;
+  font-size: 32px;
+}
+
+.deltag-info p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.deltag-info ol {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.deltag-info li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.deltag-del button {
+  background-color:  #fff;
+  color: #000;
+  border:2px solid #000;
+  border-radius: 2px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+@media (min-width: 840px) {
+  .deltag {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+     row-gap: 20px;
+  }
+
+  .deltag-trin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .deltag-info {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .deltag-del {
+    grid-column: 1;
+  }
+
+  .deltag-polaroids {
+    grid-column: 2;
+  }
+}
+</style>
