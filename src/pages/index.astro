@@ -1,20 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Deltag from '../components/deltag.astro';
 import Om1 from '../components/om1.astro';
 import Om2 from '../components/om2.astro';
 import Vinderen from '../components/vinderen.astro';
 import Vilkaar from '../components/vilkaar.astro';
 import Forsideisa from '../components/forsideisa.astro';
+import Inspiration from '../components/inspiration.astro';
+import Footer from '../components/Footer.astro';
 import "../styles/global.css";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <Forsideisa/>
-  <Om1 />
-  <Om2 />
-  <Vinderen />
-<Vilkaar/>
+
+    <Forsideisa />
+    <Om1 />
+    <Om2 />
+    <Inspiration />
+    <Deltag />
+    <Vinderen />
+    <Vilkaar />
+    <Footer />
+
 </Layout>
