@@ -1,0 +1,195 @@
+---
+---
+
+<dialog id="deltag-popup">
+
+    <div class="form-container">
+
+        <button class="close-button" id="close-form">×</button>
+
+        <h2>Klar til at deltage?</h2>
+
+        <form>
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Fulde navn"
+                required
+            />
+
+            <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+            />
+
+            <input
+                type="file"
+                name="image"
+                accept="image/*"
+            />
+
+            <input
+                type="text"
+                name="title"
+                placeholder="Titel på instant"
+                required
+            />
+
+            <textarea
+                name="description"
+                placeholder="Beskrivelse"
+                required
+            ></textarea>
+
+            <label class="terms">
+                <input type="checkbox" required />
+                <span>Jeg har læst og accepterer vilkårene</span>
+            </label>
+
+            <button class="submit-button" type="submit">
+                Indsend
+            </button>
+
+        </form>
+
+    </div>
+
+</dialog>
+
+
+<script>
+    const dialog = document.querySelector("#deltag-popup") as HTMLDialogElement;
+    const closeButton = document.querySelector("#close-form") as HTMLButtonElement;
+
+    const openButtons = document.querySelectorAll(".open-form");
+
+    openButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            dialog.showModal();
+        });
+    });
+
+    closeButton.addEventListener("click", () => {
+        dialog.close();
+    });
+</script>
+
+
+<style>
+
+dialog {
+    width: 90%;
+    max-width: 1200px;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.form-container {
+    position: relative;
+    background: #d9d9e8;
+    padding: 4rem 7rem;
+    min-height: 600px;
+}
+
+
+h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0 0 3rem;
+}
+
+
+form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid black;
+    background: white;
+    padding: 0.7rem 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+
+input[type="file"] {
+    padding: 0.6rem;
+}
+
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+
+.terms input {
+    width: 30px;
+    height: 30px;
+}
+
+
+.submit-button {
+    align-self: center;
+    background: white;
+    border: 2px solid black;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+
+    border: none;
+    background: none;
+
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 840px) {
+
+    .form-container {
+        padding: 3rem 2rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+}
+
+</style>
