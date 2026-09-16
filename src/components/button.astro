@@ -1,0 +1,20 @@
+---
+const { text = "Klik her" } = Astro.props;
+---
+
+<a class="button">
+  {text}
+</a>
+
+<style>
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 50px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+   background-color: white;
+  }
+</style>
