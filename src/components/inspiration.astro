@@ -1,0 +1,220 @@
+---
+// inspiration
+---
+
+
+<section class="inspiration">
+
+    <div class="inspiration-content">
+
+        <div class="inspiration-header">
+            <h3>Mangler du inspiration?</h3>
+            <p>Du kan også få en masse inspiration fra kunstfotografi-scenen.</p>
+        </div>
+
+        <!-- Dan Isaac -->
+        <div class="artist dan-isaac">
+            <img src="/images1/danisaac.webp" alt="Dan Isaac Wallin">
+
+            <div class="artist-text">
+                <p>
+                    Dan Isaac Wallin er en svensk kunstfotograf, der bruger
+                    storformatkameraer og vintage polaroidkameraer til sine
+                    værker. Hans værker hænger også i adskillige huse som plakater.
+                </p>
+
+                <button>Se mere</button>
+            </div>
+
+            
+        </div>
+
+        <!-- Mette Kelter -->
+        <div class="artist mette-kelter">
+
+            <div class="artist-text">
+                <p>
+                    Mette Kelter er en dansk kunstfotograf, der ofte eksperimenterer
+                    med bevidst ødelæggelse af den kemiske proces i instant-fotos.
+                    Et af nøgleordene her er uforudsigelighed i arbejdsprocessen,
+                    hvilket fører til interessante og unikke kunstværker.
+                </p>
+
+                <button>Se mere</button>
+            </div>
+
+            <img src="/images1/mettekelter.webp" alt="Mette Kelter">
+
+           
+        </div>
+
+    </div>
+
+
+    <!-- Polaroid Collection -->
+    <div class="collection">
+
+        <img
+            src="/images1/thepolaroidbook.webp"
+            alt="The Polaroid Collection"
+        >
+
+        <div class="collection-text">
+            <p>
+                The Polaroid Collection var en stor samling instant fotos samlet
+                af Polaroid Corporation. Den indeholdt værker fra en række berømte
+                fotografer, herunder eksempelvis Ansel Adams. Samlingen blev
+                splittet op i forskellige dele og sat på auktion, da Polaroid
+                Corporation gik konkurs i 2008. Heldigvis kan man finde bøger med
+                fotografier fra samlingen, for eksempel Polaroidbogen af Steve
+                Crist og Barbara Hitchcock.
+            </p>
+
+            <button>Se mere</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<style>
+
+.inspiration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+
+/* LEFT SIDE */
+
+.inspiration-content {
+    background-color: #d9d9e8;
+    padding: 5rem;
+}
+
+.inspiration-header {
+    margin-bottom: 4rem;
+}
+
+.inspiration-header h3 {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+
+.inspiration-header p {
+    max-width: 400px;
+}
+
+
+/* ARTISTS */
+
+.artist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.artist img {
+    width: 100%;
+    display: block;
+}
+
+.artist-text p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.artist-name {
+    grid-column: 1 / 2;
+    text-align: center;
+    margin: -2rem 0 0;
+    font-size: 1.3rem;
+}
+
+
+/* METTE */
+
+.mette-kelter img {
+    grid-column: 2;
+}
+
+.mette-kelter .artist-text {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.mette-kelter .artist-name {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+/* BUTTON */
+
+button {
+    background: white;
+    border: 2px solid black;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+
+/* RIGHT SIDE */
+
+.collection {
+    background-color: white;
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection img {
+    width: 65%;
+    margin-bottom: 3rem;
+}
+
+.collection-text {
+    max-width: 600px;
+}
+
+.collection-text p {
+    line-height: 1.5;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .inspiration {
+        grid-template-columns: 1fr;
+    }
+
+    .inspiration-content {
+        padding: 2rem;
+    }
+
+    .collection {
+        padding: 3rem 2rem;
+    }
+
+    .collection img {
+        width: 80%;
+    }
+
+    .inspiration-header h3 {
+        font-size: 2.2rem;
+    }
+
+}
+
+</style>
