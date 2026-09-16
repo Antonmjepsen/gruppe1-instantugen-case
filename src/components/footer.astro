@@ -1,0 +1,145 @@
+---
+import global from '../styles/global.css'; 
+---
+
+<footer class="footer">
+
+    <!-- Logo -->
+    <div class="footer-logo">
+        <img src="/images1/instantugen.svg" alt="Instant Ugen">
+    </div>
+
+    <!-- Info -->
+    <div class="footer-column">
+        <h3>Info</h3>
+
+        <a href="#">Forside</a>
+        <a href="#">Om</a>
+        <a href="#">Deltag</a>
+        <a href="#">Inspiration</a>
+        <a href="#">De nominerede</a>
+        <a href="#">Vinderen</a>
+        <a href="#">Teamet</a>
+        <a href="#">Vilkår og betingelser</a>
+    </div>
+
+    <!-- Kontakt -->
+    <div class="footer-column">
+        <h3>Kontakt</h3>
+
+        <p>Tlf nr. 22 33 54 28</p>
+        <p>info@instantugen.dk</p>
+    </div>
+
+    <!-- Social media -->
+    <div class="footer-column social">
+
+        <a href="#">
+            <span class="social-icon">◎</span>
+            Instagram
+        </a>
+
+        <a href="#">
+            <span class="social-icon">f</span>
+            Facebook
+        </a>
+
+    </div>
+
+</footer>
+
+
+<style>
+
+.footer {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 3rem;
+
+    padding: 4rem 10%;
+
+    background-color: white;
+    border: 2px solid black;
+
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+
+/* LOGO */
+
+.footer-logo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 180px;
+    height: auto;
+}
+
+
+/* COLUMNS */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-column h3 {
+    margin: 0 0 1rem;
+
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.footer-column a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.footer-column p {
+    margin: 0 0 0.3rem;
+    font-size: 0.9rem;
+}
+
+
+/* SOCIAL */
+
+.social {
+    gap: 1rem;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem 2rem;
+        gap: 3rem 2rem;
+    }
+
+    .footer-logo {
+        grid-column: 1 / -1;
+    }
+
+}
+
+</style>

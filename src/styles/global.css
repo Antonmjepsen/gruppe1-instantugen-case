@@ -59,7 +59,7 @@ button {
 
 h1 {
   font-size: 48px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue bold", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 h2 {
@@ -69,6 +69,8 @@ h2 {
 }
 h3 {
   font-size: 24px;
+  font-family: "Just Me Again Down Here";
+  font-weight: 400;
 }
 h4,
 h5,
@@ -76,6 +78,7 @@ h6,
 p {
   font-size: 18px;
   margin: 0;
+  font-family: "Helvetica Neue regular", Helvetica, Arial, sans-serif;
 }
 
 /* =========================
@@ -83,8 +86,10 @@ p {
    ========================= */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  background: #f5f1e8;
+  background: url("/public/background/Baggrundsregnbue.jpg");
   color: #111;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
