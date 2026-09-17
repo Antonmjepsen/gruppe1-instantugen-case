@@ -1,9 +1,9 @@
+```astro
 ---
 // inspiration
 import global from '../styles/global.css'; 
 import button from '../components/button.astro';
 ---
-
 
 <section class="inspiration">
 
@@ -27,8 +27,6 @@ import button from '../components/button.astro';
 
                 <button class="button">Se mere</button>
             </div>
-
-            
         </div>
 
         <!-- Mette Kelter -->
@@ -47,11 +45,9 @@ import button from '../components/button.astro';
 
             <img src="/images1/mettekelter.webp" alt="Mette Kelter">
 
-           
         </div>
 
     </div>
-
 
     <!-- Polaroid Collection -->
     <div class="collection">
@@ -87,149 +83,4 @@ import button from '../components/button.astro';
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
 }
-
-
-/* LEFT SIDE */
-
-.inspiration-content {
-    background-color: #d9d9e8;
-    padding: 5rem;
-}
-
-.inspiration-header {
-    margin-bottom: 4rem;
-}
-
-.inspiration-header h3 {
-    font-size: 3rem;
-    margin: 0 0 1rem;
-}
-
-.inspiration-header p {
-    max-width: 400px;
-}
-
-
-/* ARTISTS */
-
-.artist {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    align-items: center;
-    margin-bottom: 5rem;
-}
-
-.artist img {
-    width: 100%;
-    display: block;
-}
-
-.artist-text p {
-    margin-top: 0;
-    line-height: 1.5;
-}
-
-.artist-name {
-    grid-column: 1 / 2;
-    text-align: center;
-    margin: -2rem 0 0;
-    font-size: 1.3rem;
-}
-
-
-/* METTE */
-
-.mette-kelter img {
-    grid-column: 2;
-}
-
-.mette-kelter .artist-text {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.mette-kelter .artist-name {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-
-/* BUTTON */
-
-button {
-    background: white;
-    border: 2px solid black;
-    padding: 0.7rem 2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 2rem;
-}
-
-
-/* RIGHT SIDE */
-
-.collection {
-    background-color: white;
-    padding: 7rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.collection img {
-    width: 65%;
-    margin-bottom: 3rem;
-}
-
-.collection-text {
-    max-width: 600px;
-}
-
-.collection-text p {
-    line-height: 1.5;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-    .inspiration {
-        grid-template-columns:   1fr;
-    }
-
-    .inspiration-content {
-        padding: 2rem;
-    }
-
-    .collection {
-        padding: 3rem 2rem;
-        background-color: #d9d9e8;
-    }
-
-    .collection img {
-        width: 80%;
-    }
-
-    .inspiration-header h3 {
-        font-size: 2.2rem;
-    }
-
-    .artist,
-    .artist.mette-kelter {
-        grid-template-columns: 1fr;
-    }
-
-    .mette-kelter img,
-    .mette-kelter .artist-text {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
-
-}
-
-</style>
+```
