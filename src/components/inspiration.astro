@@ -197,7 +197,7 @@ button {
 @media (max-width: 800px) {
 
     .inspiration {
-        grid-template-columns: 1fr;
+        grid-template-columns:   1fr;
     }
 
     .inspiration-content {
@@ -215,6 +215,18 @@ button {
     .inspiration-header h3 {
         font-size: 2.2rem;
     }
+
+    .artist,
+    .artist.mette-kelter {
+        grid-template-columns: 1fr;
+    }
+
+    .mette-kelter img,
+    .mette-kelter .artist-text {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
 
 }
 
