@@ -71,11 +71,6 @@ import Form from './form.astro';
 </button>
   </div>
 
-
-  <div class="deltag-polaroids">
-   <img src="/deltagimg/nedersteimgdeltag.webp" alt="polaroiddeltager">
-  </div>
-
 </section>
 <Form />
 
@@ -88,6 +83,7 @@ width: 100%;
   flex-direction: column;
   gap: 40px;
   font-family: helvetica;
+  padding: 10%;
 }
 .deltag-trin {
   display: flex;
@@ -151,8 +147,7 @@ width: 100%;
   .deltag {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
-     row-gap: 20px;
+
   }
 
   .deltag-trin {
@@ -170,11 +165,8 @@ width: 100%;
     grid-column: 1;
   }
 
-  .deltag-polaroids {
-    grid-column: 2;
-  }
   .trin-billede img {
-  padding: 10px;
+width: 100%;
 }
 }
 </style>
