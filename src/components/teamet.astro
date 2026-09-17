@@ -1,0 +1,86 @@
+---
+import "../styles/global.css";
+---
+
+<section class="om-os">
+<img src="/img3/teametbillede.webp" alt="teambillede">
+
+ <div class="om-os-tekst">
+<h3>Hvem er vi?</h3>
+<p>Instant Ugen er et lille projekt, der drives af et par undervisere fra Multimediedesignuddannelsen på EK - Erhvervsakademi København. Instant Ugen er et halvårligt projekt, hvor undervisere og studerende samarbejder om et digitalt design- og kommunikationsprojekt relateret til Instant Ugen-konkurrencen (denne hjemmeside). I bund og grund ønsker vi bare at promovere instant fotografering og have det sjovt, mens vi gør det:-)</p>
+
+<p>Dommerne
+Bidrag vil blive gennemgået af:</p>
+
+<ul>
+    <li>Jonas Hasle (Adjunkt, Multimediedesign på EK)</li>
+    <li>Anders Dollerup (Lektor, Multimediedesign på EK)</li>
+    <li>Birgitte Heide (Lektor, Multimediedesign på EK)</li>
+    <li>Stefan Grage (Lektor, Multimediedesign på EK)</li>
+    <li>Studerende på Digital Design Valgfaget på Lektor, Multimediedesign på EK</li>
+</ul>
+
+<p> Sponsorer
+Instant Ugen er ikke relateret til nogen virksomheder inden for Instant foto-branchen. Den eneste organisation, der støtter os, er EK - Erhvervsakademi København. I hvert fald indtil videre ;-) [Link/logo til EK?]</p>
+</div>
+</section>
+
+<style>
+.om-os {
+  padding: 40px 20px;
+}
+
+.om-os img {
+  width: 60%;
+  display: block;
+  margin-bottom: 30px;
+  place-self: center;
+}
+
+.om-os-tekst h2 {
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
+.om-os-tekst h3 {
+  font-size: 22px;
+  margin: 50px 0 10px;
+  margin-left: 30px;
+}
+
+.om-os-tekst p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 20px;
+  padding: 30px;
+}
+
+.om-os-tekst ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.om-os-tekst li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+@media (min-width: 840px) {
+  .om-os {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 80px;
+    align-items: start;
+  }
+
+  .om-os img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .om-os-tekst {
+    grid-column: 2;
+  }
+}
+</style>

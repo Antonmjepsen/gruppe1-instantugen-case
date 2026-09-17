@@ -3,12 +3,15 @@ import "../styles/global.css";
 ---
 
 
-<h2>De nominerede</h2>
+
+
+    <section class="karrusel">
+      <div class="tekstkarrusel">
+      <h2>De nominerede</h2>
     <p>
       Instant Ugen var noget af en succes med over 780 bidrag. Så det var ikke nemt at finde en vinder. Efter et par lange, men spændende dage, blev dommerne enige om vinderen og de 10 nominerede.
     </p>
-
-    <section class="karrusel">
+  </div>
   <div class="karrusel-container">
 
     <div class="karrusel-item">
@@ -21,7 +24,7 @@ Et lille snapshot fra Amager Fælled, en stor skov i den sydvestlige del af Køb
 
     <div class="karrusel-item">
       <img src="/nomineredeimg/02-amager-forbraending-instaxsquare-01 1.webp" alt="billede2">
-      <p>02 - Amager Forbrænding</p>
+      <p>01 - Amager Forbrænding</p>
       <p>Navn: Stefan Grage
 Beskrivelse/historien bag: 
 Et lille snapshot fra Amager Fælled, en stor skov i den sydvestlige del af København, Danmark. Taget med et Lomomatic Square.</p>
@@ -29,7 +32,7 @@ Et lille snapshot fra Amager Fælled, en stor skov i den sydvestlige del af Køb
 
     <div class="karrusel-item">
       <img src="/nomineredeimg/05-dobbelt-exp-orestad 1.webp" alt="billede3">
-      <p>05 - Dobbelt Exponering Ørestad</p>
+      <p>01 - Amager Forbrænding</p>
       <p>Navn: Stefan Grage
 Beskrivelse/historien bag: 
 Et lille snapshot fra Amager Fælled, en stor skov i den sydvestlige del af København, Danmark. Taget med et Lomomatic Square.</p>
@@ -79,5 +82,44 @@ Et lille snapshot fra Amager Fælled, en stor skov i den sydvestlige del af Køb
 </section>
 
 <style>
+  .karrusel {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.karrusel-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.karrusel-item {
+  flex: 0 0 80%;
+   max-width: 320px;
+}
+
+.tekstkarrusel{
+  padding: 20px;
+}
+
+@media (min-width: 840px) {
+  .karrusel-container {
+    gap: 30px;
+    padding: 20px 40px;
+  }
+
+  .karrusel-item {
+    flex: 0 0 220px;
+    max-width: 220px;
+  }
+
+.karrusel-item p {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+}
 
 </style>
